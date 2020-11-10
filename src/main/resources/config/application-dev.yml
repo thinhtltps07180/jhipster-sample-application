@@ -17,7 +17,7 @@ logging:
   level:
     ROOT: DEBUG
     io.github.jhipster: DEBUG
-    com.mycompany.myapp: DEBUG
+    com.myapp: DEBUG
 
 spring:
   profiles:
@@ -37,8 +37,8 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/jhipstersampleapplication;DB_CLOSE_DELAY=-1
-    username: jhipsterSampleApplication
+    url: jdbc:h2:file:./target/h2db/db/myapp;DB_CLOSE_DELAY=-1
+    username: myApp
     password:
     hikari:
       poolName: Hikari
@@ -81,13 +81,17 @@ jhipster:
     allowed-origins: '*'
     allowed-methods: '*'
     allowed-headers: '*'
-    exposed-headers: 'Link,X-Total-Count'
+    exposed-headers: 'Authorization,Link,X-Total-Count'
     allow-credentials: true
     max-age: 1800
   security:
-    remember-me:
-      # security key (this key should be unique for your application, and kept secret)
-      key: 503dfae06152a04a25c6b71df19f6bf9045bf50bfb0cf5bf0596873c1169ebc7c5039189e83e7781afd634ebf4c88460d096
+    authentication:
+      jwt:
+        # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
+        base64-secret: NDRmY2U2Y2U5ODUzNTEyODI4YWYzOGIyY2FiOWM1ZDU4NDM2YTk2NTc0YmNkMjc5MzNiNDA2MzBmZWFhYTcwNTUwMjQyZTljZGRjZmMyZTU4NDdjMTlkNThjNWQzYmZiYzE1MzlmY2Q4YTdiZDg0ZTIyMGRhNTE3NWY1OGFiN2U=
+        # Token is valid 24 hours
+        token-validity-in-seconds: 86400
+        token-validity-in-seconds-for-remember-me: 2592000
   mail: # specific JHipster mail property, for standard properties see MailProperties
     base-url: http://127.0.0.1:8080
   metrics:

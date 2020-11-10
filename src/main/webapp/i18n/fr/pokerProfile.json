@@ -1,0 +1,27 @@
+{
+  "myApp": {
+    "pokerProfile": {
+      "home": {
+        "title": "PokerProfiles",
+        "createLabel": "Créer un nouveau Poker Profile",
+        "createOrEditLabel": "Créer ou éditer un Poker Profile",
+        "notFound": "Aucun Poker Profile trouvé"
+      },
+      "created": "Un nouveau Poker Profile a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Poker Profile avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Poker Profile avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Poker Profile {{ id }} ?"
+      },
+      "detail": {
+        "title": "Poker Profile"
+      },
+      "ongameId": "Ongame Id",
+      "nickName": "Nick Name",
+      "regDate": "Reg Date",
+      "lastDate": "Last Date",
+      "photoPath": "Photo Path",
+      "ip": "Ip"
+    }
+  }
+}
