@@ -1,0 +1,24 @@
+
+application {
+  config {
+    baseName myApp,
+    applicationType monolith,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework angular
+  }
+  entities *
+}
+
+entity PokerProfile {
+	ongameId String
+    nickName String
+    regDate String
+    lastDate String
+    photoPath String
+    ip String
+}
+
+
+    
