@@ -1,0 +1,41 @@
+{
+  "name": "PokerProfile",
+  "fields": [
+    {
+      "fieldName": "ongameId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nickName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "regDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "photoPath",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ip",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201110084521",
+  "entityTableName": "poker_profile",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myApp"]
+}

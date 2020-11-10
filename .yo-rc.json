@@ -2,12 +2,12 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "gitCompany": "",
-    "baseName": "jhipsterSampleApplication",
-    "packageName": "com.mycompany.myapp",
-    "packageFolder": "com/mycompany/myapp",
-    "serverPort": 8080,
+    "baseName": "myApp",
+    "packageName": "com.myapp",
+    "packageFolder": "com/myapp",
+    "serverPort": "8080",
     "serviceDiscoveryType": false,
-    "authenticationType": "session",
+    "authenticationType": "jwt",
     "uaaBaseName": "../uaa",
     "cacheProvider": "ehcache",
     "enableHibernateCache": true,
@@ -24,11 +24,10 @@
     "testFrameworks": [],
     "enableTranslation": true,
     "nativeLanguage": "en",
-    "languages": ["en", "ko", "vi"],
+    "languages": ["en", "fr"],
     "clientFramework": "angularX",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "6.10.5",
-    "rememberMeKey": "503dfae06152a04a25c6b71df19f6bf9045bf50bfb0cf5bf0596873c1169ebc7c5039189e83e7781afd634ebf4c88460d096",
     "embeddableLaunchScript": false,
     "clientTheme": "none",
     "creationTimestamp": 1604997485231,
@@ -36,9 +35,15 @@
     "dtoSuffix": "DTO",
     "otherModules": [],
     "blueprints": [],
-    "prettierJava": true
+    "prettierJava": true,
+    "skipUserManagement": false,
+    "skipClient": false,
+    "skipServer": false,
+    "clientThemeVariant": "",
+    "jwtSecretKey": "Mjg1OTY1YjA5NDRmZGFkNjJkYTg3MTE0MzM1MGU1OGEyMTUwNzQ3MjlmNTU3ZDc1MWVjMDJlODI4MTk4MjQwOGI1YzM3MTYwN2Y4NmE3YjE3MzI5MmMyZTFjMDI0M2Y5OWEwM2ExYTU3YmE1OGM0ZDFjNjZkNmQzMWNjY2JmMmI="
   },
   "git-provider": "GitHub",
   "git-company": "thinhtltps07180",
-  "repository-name": "jhipster-sample-application"
+  "repository-name": "jhipster-sample-application",
+  "entities": ["PokerProfile"]
 }

@@ -4,8 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FindLanguageFromKeyPipe implements PipeTransform {
   private languages: { [key: string]: { name: string; rtl?: boolean } } = {
     en: { name: 'English' },
-    ko: { name: '한국어' },
-    vi: { name: 'Tiếng Việt' },
+    fr: { name: 'Français' },
     // jhipster-needle-i18n-language-key-pipe - JHipster will add/remove languages in this object
   };
 

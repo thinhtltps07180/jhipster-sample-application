@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="pokerProfile">
+            <h2><span jhiTranslate="myApp.pokerProfile.detail.title">Poker Profile</span> {{ pokerProfile.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="myApp.pokerProfile.ongameId">Ongame Id</span></dt>
+                <dd>
+                    <span>{{ pokerProfile.ongameId }}</span>
+                </dd>
+                <dt><span jhiTranslate="myApp.pokerProfile.nickName">Nick Name</span></dt>
+                <dd>
+                    <span>{{ pokerProfile.nickName }}</span>
+                </dd>
+                <dt><span jhiTranslate="myApp.pokerProfile.regDate">Reg Date</span></dt>
+                <dd>
+                    <span>{{ pokerProfile.regDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="myApp.pokerProfile.lastDate">Last Date</span></dt>
+                <dd>
+                    <span>{{ pokerProfile.lastDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="myApp.pokerProfile.photoPath">Photo Path</span></dt>
+                <dd>
+                    <span>{{ pokerProfile.photoPath }}</span>
+                </dd>
+                <dt><span jhiTranslate="myApp.pokerProfile.ip">Ip</span></dt>
+                <dd>
+                    <span>{{ pokerProfile.ip }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/poker-profile', pokerProfile.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

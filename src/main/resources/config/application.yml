@@ -59,7 +59,7 @@ management:
 
 spring:
   application:
-    name: jhipsterSampleApplication
+    name: myApp
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by maven when building the JAR file
@@ -97,13 +97,13 @@ spring:
     allow-bean-definition-overriding: true
   task:
     execution:
-      thread-name-prefix: jhipster-sample-application-task-
+      thread-name-prefix: my-app-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: jhipster-sample-application-scheduling-
+      thread-name-prefix: my-app-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -131,21 +131,21 @@ info:
 
 jhipster:
   clientApp:
-    name: 'jhipsterSampleApplicationApp'
+    name: 'myApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #     allowed-origins: "*"
   #     allowed-methods: "*"
   #     allowed-headers: "*"
-  #     exposed-headers: "Link,X-Total-Count"
+  #     exposed-headers: "Authorization,Link,X-Total-Count"
   #     allow-credentials: true
   #     max-age: 1800
   mail:
-    from: jhipsterSampleApplication@localhost
+    from: myApp@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: jhipsterSampleApplication API
-    description: jhipsterSampleApplication API documentation
+    title: myApp API
+    description: myApp API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:
